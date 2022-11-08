@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HOTEL Niwas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+
+        <script src="jquery1.js"></script>
+
+        <script>
+            $(document).ready(function(){
+
+                $("#btn1").click(function(){
+                    var dt=$("#chekin-date").val();
+                    var dt2=$("#chekout-date").val();
+                    
+                    if (dt != "" && dt2!=""){ //|| since == "") {
+                        alert('Booked Successfully');  
+                    }
+                })
+            })
+        </script>
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <!-- <div class = "site-name">
+                    <span>GEEKPROBIN</span>
+                </div> -->
+                <img src="images/Logo.png" class="logo">
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2 style="color:burlywood;">NICE AND COMFORTABLE PLACE TO STAY</h2>
+                <h3 style="font-size: 30px; color:aquamarine;">Hotel Niwas welcomes you.</h3>
+                <p>Our hotel offers you an unparallel luxury experience,we have top quality customer service and strive to meet every need you have.</p>
+                <a href="#r" class="head-btn">GET STARTED</a>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#r">rooms</a></li>
+                <li><a href = "#customers">customers</a></li>
+            </ul>
+            <button class = "btn sign-up">sign up</button>
+            <button class = "btn log-in">log in</button>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h1>services</h1>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Food Service/ Food Runner</h2>
+                        <p>Within half an hour, foods and drinks ordered will be served to your rooms and after the food was eaten it was cleaned and all the waste stuffs will be removed from the room.There are many different types of food and beverage service types or procedures, but the major category of the food service is 1) Plate Service, 2) Cart Service, 3) Plater Service, 4) Buffet Service and 5) Family style service.</p>
+                        <!-- <button type = "button" class = "btn">Know More</button> -->
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Refreshment</h2>
+                        <p>Various types of drinks which make you feel relax. Top quality drinks are there for your service. The welcome drink conains a bottle of wine, a small cheese tray, a fruit place, crackers, cookies or any combination of the five. A guest can choose any of these. Refreshments made the guests feel fresh and active for the whole day.</p>
+                            <!-- <button type = "button" class = "btn">Know More</button> -->
+                        
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon" style="margin-left: -15px;">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content" style="margin-left: -70px;">
+                        <h2>Housekeeping</h2>
+                        <p>Experienced house-keepers are there for your service. They can-
+                            1.Performs cleaning duties in all guest areas and back of house. <br>
+                            2.Consistently offers professional, friendly, and engaging service. <br>
+                            3.Ensures housekeeping departmental standards are followed. <br>
+                            4.Responds timely to guest's special requests for miscellaneous items like cribs, cots, extra towels, etc. <br>
+                            5.Maintains inventory of necessary supplies. <br>
+                            6.Reports necessary maintenance items. <br>
+                            7.Follows departmental policies and procedures. <br>
+                            8.Follows all safety and sanitation policies. <br>
+                            9.Assists other departments when needed to ensure optimum service to guests. <br>
+                            10.Performs additional duties as needed.</p>
+                        <!-- <button type = "button" class = "btn">Know More</button> -->
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Room Security</h2>
+                        <p>The management take care that the Safety and Security systems cover the following areas: <br>
+                            1.Guest: Protection from crimes such as murder, abduction and health hazards from outsiders, hotel staff, pests, food poisoning etc. <br>
+                            2.Staff: Providing staff lockers, insurances, health schemes, provident funds etc. Protective clothing, shoes, fire fighting drills, supply of clean drinking water use of aqua guards, sanitized wash rooms etc. <br>
+                            3.Guest luggage: Secure luggage store rooms and proper equipment such as luggage trolley and bell hop trolley should be provided. <br>
+                            4.Protection of raw materials, goods, provisions and groceries etc. For this the safety and security system should cover proper storage and pest control systems, apart from the application of total material management system.</p>
+                        <!-- <button type = "button" class = "btn">Know More</button> -->
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book" id="book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" name="checkin" id = "chekin-date" required>
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date" required>
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult" required>
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" id="btn1" value = "Book Now" >
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title" id="r">
+                <h1>rooms</h1>
+            </div>
+            <div class = "rooms-container" >
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                AC facility
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                WIFI facility
+                            </li>
+                        </ul>
+                        <p> These rooms are assigned to one person or a couple. It may have one or more beds, but the size of the bed depends on the hotel. Some single rooms have a twin bed, most will have a double, few will have a queen bed.</p>
+                        <p class = "rate">
+                            <span>Rs 1200 /</span> Per Night
+                        </p>
+                        <!-- <button type = "button" class = "btn">book now</button> -->
+                        <a href="#book" id="abtn"><input type="button" value="Book now" class="btn"></a>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                AC facility
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                WIFI facility
+                            </li>
+                        </ul>
+                        <p>This room is equipped for three people to stay. Its a family room.The room will have a combination of either three twin beds, one double bed and a twin, or two double beds.Other than a double bed, a standard room comprises a dressing table, a chair, a working desk, a cupboard, a private bathroom, a coffee maker and a TV.</p>
+                        <p class = "rate">
+                            <span>Rs 1500 /</span> Per Night
+                        </p>
+                        <!-- <button type = "button" class = "btn">book now</button> -->
+                        <a href="#book" id="abtn"><input type="button" value="Book now" class="btn"></a>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Cooler facility
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                               WIFI facility
+                            </li>
+                        </ul>
+                        <p>These room are spacious enough to accommodate a couple. In these type of rooms you will get all the facility like blanket sofa table.Its a non ac room but its outside view is so amazing.</p>
+                       
+                        <p class = "rate">
+                            <span>Rs 1000 /</span> Per Night
+                        </p>
+                        <!-- <button type = "button" class = "btn">book now</button> -->
+                        <a href="#book"
+                        id="abtn"><input type="button" value="Book now" class="btn"></a>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h1>customers</h1>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>We Loved it</h3>
+                        <p>What a beautiful hotel it is! very nice and service is also very quick, good hospitality, well-maintained. Overall a good and hygienic place to stay.</p>
+                        <img src = "images/cus1.jpg" alt = "customer image">
+                        <span>Raunak Malothra, India</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Comfortable Living</h3>
+                        <p>Lovely rooms, well-mannered staff and other various things which makes our surrounding very pleasant to feel.</p>
+                        <img src = "images/cus2.jpg" alt = "customer image">
+                        <span>Kiara Singh, India</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Nice Place</h3>
+                        <p>Good room service, all day cleanliness everywhere, a healthy environment. Overall a nice and comfortable place to stay with your friends and family.</p>
+                        <img src = "images/cus3.jpg" alt = "customer image">
+                        <span>Dom Jason, New York</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>Our Hotel Niwas is a home-like palace where you find all things related to your home.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <a href="https://twitter.com/Shubham_3112?t=s4NLrEoMB24zLvVyn3SPXg&s=09" target="_blank">
+                                <i class = "fa fa-twitter fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class = "flex">
+                            <a href="https://www.facebook.com/sam31122000" target="_blank">
+                            <i class = "fa fa-facebook fa-2x">
+                            </i>
+                        </a>
+                        </li>
+                        <li class = "flex">
+                            <a href="https://instagram.com/stylishsamy3?igshid=YmMyMTA2M2Y=" target="_blank"> 
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#rooms">Rooms</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#services">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            lovely Professional University, Punjab, India-144411
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +91 7992386291
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            shubhamgupta9722@gmail.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
